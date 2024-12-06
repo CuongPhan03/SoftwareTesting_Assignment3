@@ -1,4 +1,4 @@
-# Software Testing Assignment 3"
+# Software Testing Assignment 3
 
 Run: open terminal of this directory and run the test file
 
