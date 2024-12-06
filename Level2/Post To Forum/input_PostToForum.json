@@ -1,0 +1,685 @@
+{
+  "login": [
+    { "action": "set_window_size", "value": [1000, 800] },
+    {
+      "action": "get_url",
+      "value": "https://sandbox.moodledemo.net/login/index.php"
+    },
+    {
+      "action": "input",
+      "element_type": "ID",
+      "element_locator": "username",
+      "value": "teacher"
+    },
+    {
+      "action": "input",
+      "element_type": "ID",
+      "element_locator": "password",
+      "value": "sandbox24"
+    },
+    {
+      "action": "click",
+      "element_type": "ID",
+      "element_locator": "loginbtn"
+    }
+  ],
+  "logout": [
+    {
+      "action": "click",
+      "element_type": "ID",
+      "element_locator": "user-menu-toggle"
+    },
+    {
+      "action": "click",
+      "element_type": "LINK_TEXT",
+      "element_locator": "Log out"
+    }
+  ],
+  "testcases": [
+    {
+      "name": "test_tC004001",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "T"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "Your post was successfully added."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004002",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magni minus laudantium quos eligendi accusamus in blanditiis hic, quaerat fuga libero eius voluptatibus? Dignissimos ipsum quam necessitatibus consequatur fuga obcaecati nulla tempore deserun"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "Your post was successfully added."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004003",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "$#%!"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "Your post was successfully added."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004004",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Topic 1"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "T"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "Your post was successfully added."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004005",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Topic 1"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_advancedadddiscussion"
+        },
+        {
+          "action": "drop_files",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": ".dndupload-arrow",
+          "value": ["files/Project #3 description.pdf"]
+        },
+        {
+          "action": "wait",
+          "expected_condition": "presence_of_element_located",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": ".fp-file"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "Your post was successfully added."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004006",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Topic 1"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_advancedadddiscussion"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_pinned"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "Your post was successfully added."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004007",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Topic 1"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_advancedadddiscussion"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_mailnow"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "This post will be mailed out immediately to all forum subscribers."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004008",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Topic 1"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_advancedadddiscussion"
+        },
+        {
+          "action": "input",
+          "element_type": "XPATH",
+          "element_locator": "//input[@placeholder='Enter tags...']",
+          "value": "Tag 1"
+        },
+        {
+          "action": "input",
+          "element_type": "XPATH",
+          "element_locator": "//input[@placeholder='Enter tags...']",
+          "value": "ENTER"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div/p[1]",
+          "value": "Your post was successfully added."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004009",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "ID",
+          "element_locator": "id_error_subject",
+          "value": "- Required"
+        }
+      ]
+    },
+    {
+      "name": "test_tC004010",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magni minus laudantium quos eligendi accusamus in blanditiis hic, quaerat fuga libero eius voluptatibus? Dignissimos ipsum quam necessitatibus consequatur fuga obcaecati nulla tempore deserunm"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "ID",
+          "element_locator": "id_error_subject",
+          "value": "- Maximum of 255 characters"
+        }
+      ]
+    },
+    {
+      "name": "test_tC004011",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "Topic 1"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_submitbutton"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "ID",
+          "element_locator": "id_error_message",
+          "value": "- Required"
+        }
+      ]
+    },
+    {
+      "name": "test_tC004012",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_advancedadddiscussion"
+        },
+        {
+          "action": "drop_files",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": ".dndupload-arrow",
+          "value": ["files/large_file.exe"]
+        },
+        {
+          "action": "assert_text",
+          "element_type": "ID",
+          "element_locator": "fp-msg-labelledby",
+          "value": "The maximum size you can upload is 256MB."
+        }
+      ]
+    },
+    {
+      "name": "test_tC004013",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_advancedadddiscussion"
+        },
+        {
+          "action": "drop_files",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": ".dndupload-arrow",
+          "value": [
+            "files/Project #2 description.pdf",
+            "files/Project #3 description.pdf"
+          ]
+        },
+        {
+          "action": "assert_text",
+          "element_type": "ID",
+          "element_locator": "fp-msg-labelledby",
+          "value": "You are allowed to attach a maximum of 1 file(s) to this item"
+        }
+      ]
+    },
+    {
+      "name": "test_tC004014",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/forum/view.php?id=1"
+        },
+        {
+          "action": "click",
+          "element_type": "LINK_TEXT",
+          "element_locator": "Add discussion topic"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "id_subject",
+          "value": "T"
+        },
+        {
+          "action": "wait",
+          "expected_condition": "element_to_be_clickable",
+          "element_type": "CSS_SELECTOR",
+          "element_locator": "iframe"
+        },
+        { "action": "switch_frame", "value": 0 },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "tinymce",
+          "value": "This is a new topic"
+        },
+        { "action": "switch_frame", "value": null },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "id_cancelbtn"
+        },
+        {
+          "action": "assert_count",
+          "element_type": "XPATH",
+          "element_locator": "//*[@id='user-notifications']/div",
+          "value": 0
+        }
+      ]
+    }
+  ]
+}

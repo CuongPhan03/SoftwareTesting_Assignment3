@@ -1,0 +1,11 @@
+[
+  { "name": "test_tC003001", "searchText": "cour" },
+  { "name": "test_tC003002", "searchText": "My first course" },
+  { "name": "test_tC003003", "searchText": "My" },
+  { "name": "test_tC003004", "searchText": "blank" },
+  { "name": "test_tC003005", "searchText": "my First course" },
+  { "name": "test_tC003006", "searchText": null },
+  { "name": "test_tC003007", "searchText": "     My first course" },
+  { "name": "test_tC003008", "searchText": "#@1" },
+  { "name": "test_tC003009", "searchText": "My third course" }
+]
