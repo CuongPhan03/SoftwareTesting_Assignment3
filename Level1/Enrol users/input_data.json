@@ -1,0 +1,237 @@
+[
+    {
+        "users": ["Max Manager manager@moodle.a", "Sam Student student@moodle.a"],
+        "role": "Student",
+        "show_more": "false",
+        "recover": "false",
+        "end_day": 28,
+        "end_month": "February",
+        "end_year": 2024,
+        "end_minutes": 34,
+        "end_hour": 2,
+        "duration": "17 days",
+        "enable": "false",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span",
+            "MM": "//*[@id=\"user-index-participants-3_r2_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": ["Sam Student student@moodle.a"],
+        "role": "Non-editing teacher",
+        "show_more": "false",
+        "recover": "false",
+        "end_day": 28,
+        "end_month": "February",
+        "end_year": 2024,
+        "end_minutes": 34,
+        "end_hour": 2,
+        "duration": "17 days",
+        "enable": "false",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": ["Sam Student student@moodle.a"],
+        "role": "Student",
+        "show_more": "false",
+        "recover": "false",
+        "end_day": 28,
+        "end_month": "February",
+        "end_year": 2024,
+        "end_minutes": 34,
+        "end_hour": 2,
+        "duration": "17 days",
+        "enable": "false",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": ["Sam Student student@moodle.a"],
+        "role": "Student",
+        "show_more": "false",
+        "recover": "false",
+        "end_day": 28,
+        "end_month": "February",
+        "end_year": 2024,
+        "end_minutes": 34,
+        "end_hour": 2,
+        "duration": "17 days",
+        "enable": "false",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "true"
+    },
+    {
+        "users": ["Sam Student student@moodle.a"],
+        "role": "Student",
+        "show_more": "true",
+        "recover": "true",
+        "start_date": " Course start",
+        "end_day": "",
+        "end_month": "February",
+        "end_year": "",
+        "end_minutes": "",
+        "end_hour": "",
+        "duration": "",
+        "enable": "true",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": ["Sam Student student@moodle.a", "Admin User demo@moodle.a"],
+        "role": "Non-editing teacher",
+        "show_more": "false",
+        "recover": "false",
+        "start_date": " Course start",
+        "end_day": "",
+        "end_month": "",
+        "end_year": "",
+        "end_minutes": "",
+        "end_hour": "",
+        "duration": "",
+        "enable": "false",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span",
+            "AU": "//*[@id=\"user-index-participants-3_r2_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": ["Sam Student student@moodle.a", "Admin User demo@moodle.a"],
+        "role": "Student",
+        "show_more": "false",
+        "recover": "false",
+        "start_date": " Course start",
+        "end_day": "",
+        "end_month": "",
+        "end_year": "",
+        "end_minutes": "",
+        "end_hour": "",
+        "duration": "",
+        "enable": "false",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span",
+            "AU": "//*[@id=\"user-index-participants-3_r2_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": ["Sam Student student@moodle.a", "Admin User demo@moodle.a"],
+        "role": "Student",
+        "show_more": "true",
+        "recover": "false",
+        "start_date": " Course start",
+        "end_day": "",
+        "end_month": "December",
+        "end_year": "",
+        "end_minutes": "",
+        "end_hour": "",
+        "duration": "",
+        "enable": "true",
+        "expected_results": {
+            "SS": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span",
+            "AU": "//*[@id=\"user-index-participants-3_r2_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": [],
+        "role": "Non-editing teacher",
+        "show_more": "false",
+        "recover": "false",
+        "start_date": "",
+        "end_day": "",
+        "end_month": "",
+        "end_year": "",
+        "end_minutes": "",
+        "end_hour": "",
+        "duration": "",
+        "enable": "false",
+        "expected_results": {
+            "TT": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+
+    {
+        "users": [],
+        "role": "Student",
+        "show_more": "false",
+        "recover": "false",
+        "start_date": "",
+        "end_day": "",
+        "end_month": "",
+        "end_year": "",
+        "end_minutes": "",
+        "end_hour": "",
+        "duration": "",
+        "enable": "false",
+        "expected_results": {
+            "TT": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "false"
+    },
+    {
+        "users": [],
+        "role": "Student",
+        "show_more": "true",
+        "recover": "false",
+        "start_date": "",
+        "end_day": 8,
+        "end_month": "December",
+        "end_year": 2024,
+        "end_minutes": 30,
+        "end_hour": 11,
+        "duration": "",
+        "enable": "true",
+        "expected_results": {
+            "TT": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "true"
+    },
+    {
+        "users": [],
+        "role": "Student",
+        "show_more": "true",
+        "recover": "false",
+        "start_date": "",
+        "end_day": 8,
+        "end_month": "December",
+        "end_year": 2025,
+        "end_minutes": 30,
+        "end_hour": 11,
+        "duration": "",
+        "enable": "true",
+        "expected_results": {
+            "TT": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "true"
+    },
+    {
+        "users": [],
+        "role": "Student",
+        "show_more": "true",
+        "recover": "false",
+        "start_date": "",
+        "end_day": 7,
+        "end_month": "",
+        "end_year": "",
+        "end_minutes": "",
+        "end_hour": "",
+        "duration": "",
+        "enable": "true",
+        "expected_results": {
+            "TT": "//*[@id=\"user-index-participants-3_r0_c1\"]/a/span"
+        },
+        "canceled": "true"
+    }
+]

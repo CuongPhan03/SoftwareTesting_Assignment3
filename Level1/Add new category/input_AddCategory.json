@@ -1,0 +1,51 @@
+[
+    {
+        "name": "new_02",
+        "parent_category": "",
+        "id_category": "05",
+        "description": "<p>aaaaaaaaa<br data-mce-bogus=\"1\"></p>",
+        "cancel": "true"
+    },
+    {
+        "name": "",
+        "parent_category": "",
+        "id_category": "",
+        "description": "",
+        "cancel": "true"
+    },
+    {
+        "name": "new_09",
+        "parent_category": "none",
+        "id_category": "99",
+        "description": "<p>123<br data-mce-bogus=\"1\"></p>",
+        "cancel": "true"
+    },
+    {
+        "name": "hihi",
+        "parent_category": "none",
+        "id_category": "01",
+        "description": "<p>qqqqqq<br data-mce-bogus=\"1\"></p>",
+        "cancel": "false"
+    },
+    {
+        "name": "",
+        "parent_category": "none",
+        "id_category": "023",
+        "description": "<p>mmmmmmmm<br data-mce-bogus=\"1\"></p>",
+        "cancel": "false"
+    },
+    {
+        "name": "cat_1",
+        "parent_category": "Top",
+        "id_category": "11",
+        "description": "<p>aaaaaa<br data-mce-bogus=\"1\"></p>",
+        "cancel": "false"
+    },
+    {
+        "name": "new_10",
+        "parent_category": "Miscellaneous",
+        "id_category": "90",
+        "description": "<p>mmmmmmmm<br data-mce-bogus=\"1\"></p>",
+        "cancel": "false"
+    }
+]
