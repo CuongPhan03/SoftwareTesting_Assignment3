@@ -1,0 +1,220 @@
+{
+    "data": [
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "10",
+            "expected": "Reset columns"
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "10",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "10",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "10",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "-1",
+            "expected": "The default mark must be positive."
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "-1",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "-1",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "-1",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "0",
+            "expected": "The default mark must be positive."
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "0",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "0",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "0",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "100000",
+            "expected": "Reset columns"
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "100000",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "100000",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "100000",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "99999",
+            "expected": "Reset columns"
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "99999",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "99999",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "99999",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "a",
+            "expected": "You must enter a number here."
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "a",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "a",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "a",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "100001",
+            "expected": "Reset columns"
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "100001",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "100001",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "100001",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "1",
+            "expected": "Reset columns"
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "1",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "1",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "1",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "a",
+            "default_mark": "",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "a",
+            "text": "",
+            "default_mark": "",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "a",
+            "default_mark": "",
+            "expected": "- You must supply a value here."
+        },
+        {
+            "name": "",
+            "text": "",
+            "default_mark": "",
+            "expected": "- You must supply a value here."
+        }
+    ]
+}

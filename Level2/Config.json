@@ -1,0 +1,232 @@
+[
+    {
+        "test_name": "add_a_TF_question",
+        "steps": [
+            {
+                "method": "ID",
+                "value": "id_name",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "id_name",
+                "action": "send_keys",
+                "data": "name"
+            },
+            {
+                "method": "TAG_NAME",
+                "value": "iframe",
+                "action": "switch_to_frame",
+                "data": "0"
+            },
+            {
+                "method": "CSS_SELECTOR",
+                "value": "html",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "tinymce",
+                "action": "send_keys",
+                "data": "text"
+            },
+            {
+                "method": "ID",
+                "value": "id_defaultmark",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "id_defaultmark",
+                "action": "clear",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "id_defaultmark",
+                "action": "send_keys",
+                "data": "default_mark"
+            },
+            {
+                "method": "ID",
+                "value": "id_submitbutton",
+                "action": "click",
+                "data": ""
+            }
+        ],
+        "verify": [
+            {
+                "expected": "Reset columns",
+                "xpath": "//*[@id=\"questionscontainer\"]/div/span/a"
+            },
+            {
+                "expected": "- You must supply a value here.",
+                "xpath": "//*[@id=\"id_error_name\"]",
+                "condition": "name"
+            },
+            {
+                "expected": "- You must supply a value here.",
+                "xpath": "//*[@id=\"id_error_questiontext\"]",
+                "condition": "text"
+            },
+            {
+                "expected": "- You must supply a value here.",
+                "xpath": "//*[@id=\"id_error_defaultmark\"]",
+                "condition": "default_mark"
+            },
+            {
+                "expected": "The default mark must be positive.",
+                "xpath": "//*[@id=\"id_error_defaultmark\"]"
+            },
+            {
+                "expected": "You must enter a number here.",
+                "xpath": "//*[@id=\"id_error_defaultmark\"]"
+            }
+        ]
+    },
+    {
+        "test_name": "carlendar_file_test",
+        "steps": [
+            {
+                "method": "ID",
+                "value": "id_name",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "id_name",
+                "action": "send_keys",
+                "data": "name"
+            },
+            {
+                "method": "ID",
+                "value": "id_importfrom",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "XPATH",
+                "value": "//option[. = 'Calendar file (.ics)']",
+                "action": "choose",
+                "data": ""
+            },
+            
+            {
+                "method": "NAME",
+                "value": "importfilechoose",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "XPATH",
+                "value": "//span[contains(.,'Upload a file')]",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "NAME",
+                "value": "repo_upload_file",
+                "action": "find",
+                "data": ""
+            },
+            {
+                "method": "XPATH",
+                "value": "//input[@type='file']",
+                "action": "send_keys",
+                "data": "file"
+            },
+            {
+                "method": "XPATH",
+                "value": "//button[contains(.,'Upload this file')]",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "id_add",
+                "action": "click",
+                "data": ""
+            }
+        ],
+        "verify": [
+            {
+                "expected": "Text file filetype cannot be accepted.",
+                "xpath": "//div[contains(text(), 'Text file filetype cannot be accepted.')]"
+            },
+            {
+                "expected": "The file is either empty or a folder. To upload folders zip them first.",
+                "xpath": "//div[contains(text(), "
+            },
+            {
+                "expected": "- Required",
+                "xpath": "//*[@id=\"id_error_name\"]"
+            },
+            {
+                "expected": "Either a URL or a file is required to import a calendar.",
+                "xpath": "//*[@id=\"id_error_importfile\"]"
+            },
+            {
+                "expected": "Import Calendar",
+                "xpath": "//*[@id=\"region-main\"]/div/h2"
+            }
+        ]
+    },
+    {
+        "test_name": "carlendar_url_test",
+        "steps": [
+            {
+                "method": "ID",
+                "value": "id_name",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "id_name",
+                "action": "send_keys",
+                "data": "name"
+            },
+            {
+                "method": "ID",
+                "value": "id_url",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "id_url",
+                "action": "send_keys",
+                "data": "url"
+            },
+            
+            {
+                "method": "ID",
+                "value": "id_add",
+                "action": "click",
+                "data": ""
+            }
+        ],
+        "verify": [
+            {
+                "expected": "- Required",
+                "xpath": "//*[@id=\"id_error_name\"]"
+            },
+            {
+                "expected": "Either a URL or a file is required to import a calendar.",
+                "xpath": "//*[@id=\"id_error_url\"]"
+            },
+            {
+                "expected": "The given iCal URL is invalid.",
+                "xpath": "//*[@id=\"id_error_url\"]"
+            },
+            {
+                "expected": "Import Calendar",
+                "xpath": "//*[@id=\"region-main\"]/div/h2"
+            }
+        ]
+    }
+]

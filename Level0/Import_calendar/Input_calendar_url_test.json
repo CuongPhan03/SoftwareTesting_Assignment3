@@ -1,0 +1,50 @@
+{
+    "url_data": [
+        {
+            "name": "",
+            "url": "",
+            "expected": "- Required"
+        },
+        {
+            "name": "a",
+            "url": "",
+            "expected": "Either a URL or a file is required to import a calendar."
+        },
+        {
+            "name": "",
+            "url": "a",
+            "expected": "- Required"
+        },
+        {
+            "name": "a",
+            "url": "a",
+            "expected": "The given iCal URL is invalid."
+        },
+        {
+            "name": "",
+            "url": "https://vn.search.yahoo.com/search?fr=mcafee&type=E210VN91215G0&p=calendar",
+            "expected": "- Required"
+        },
+        {
+            "name": "a",
+            "url": "https://vn.search.yahoo.com/search?fr=mcafee&type=E210VN91215G0&p=calendar",
+            "expected": "The given iCal URL is invalid."
+        },
+        {
+            "name": "",
+            "url": "https://calendar.google.com/calendar/u/0/r",
+            "expected": "- Required"
+        },
+        {
+            "name": "a",
+            "url": "https://calendar.google.com/calendar/u/0/r",
+            "expected": "Import or export calendars"
+        }
+    ],
+    "authen": [
+        {
+            "username": "manager",
+            "password": "sandbox24"
+        }
+    ]
+}

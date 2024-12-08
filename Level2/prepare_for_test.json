@@ -1,0 +1,95 @@
+[
+    {
+        "action_name": "login",
+        "steps": [
+            {
+                "method": "",
+                "value": "",
+                "action": "get",
+                "data": "https://sandbox.moodledemo.net/login/index.php"
+            },
+            {
+                "method": "ID",
+                "value": "username",
+                "action": "send_keys",
+                "data": "manager"
+            },
+            {
+                "method": "ID",
+                "value": "password",
+                "action": "send_keys",
+                "data": "sandbox24"
+            },
+            {
+                "method": "ID",
+                "value": "loginbtn",
+                "action": "click",
+                "data": ""
+            }      
+        ]  
+    },
+    {
+        "action_name": "logout",
+        "steps": [
+            {
+                "method": "",
+                "value": "",
+                "action": "get",
+                "data": "https://sandbox.moodledemo.net/"
+            },
+            {
+                "method": "ID",
+                "value": "user-menu-toggle",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "LINK_TEXT",
+                "value": "Log out",
+                "action": "click",
+                "data": ""
+            }
+        ]
+    },
+    {
+        "action_name": "go_to_add_question_page",
+        "steps": [
+            {
+                "method": "",
+                "value": "",
+                "action": "get",
+                "data": "https://sandbox.moodledemo.net/question/edit.php?courseid=1"
+            },
+            {
+                "method": "XPATH",
+                "value": "/html/body/div[2]/div[3]/div/div[3]/div/section/div/div[2]/div[2]/div/div/div[1]/form/button",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "ID",
+                "value": "item_qtype_truefalse",
+                "action": "click",
+                "data": ""
+            },
+            {
+                "method": "XPATH",
+                "value": "/html/body/div[6]/div[3]/div/div[2]/div/div/form/div[3]/input[1]",
+                "action": "click",
+                "data": ""
+            }
+        ]
+    },
+    {
+        "action_name": "go_to_import_calendar_page",
+        "steps": [
+            {
+                "method": "",
+                "value": "",
+                "action": "get",
+                "data": "https://sandbox.moodledemo.net/calendar/import.php?"
+            }   
+        ]
+    }
+
+]

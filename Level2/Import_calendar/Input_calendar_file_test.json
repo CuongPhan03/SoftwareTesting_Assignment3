@@ -1,0 +1,60 @@
+{
+    "file_data": [
+        {
+            "name": "",
+            "file": "",
+            "expected": "- Required"
+        },
+        {
+            "name": "a",
+            "file": "",
+            "expected": "Either a URL or a file is required to import a calendar."
+        },
+        {
+            "name": "",
+            "file": "C:\\\\Test\\\\test.txt",
+            "expected": "Text file filetype cannot be accepted."
+        },
+        {
+            "name": "a",
+            "file": "C:\\\\Test\\\\test.txt",
+            "expected": "Text file filetype cannot be accepted."
+        },
+        {
+            "name": "",
+            "file": "C:\\\\Test\\\\event.ics",
+            "expected": "The file 'event.ics' is either empty or a folder. To upload folders zip them first."
+        },
+        {
+            "name": "a",
+            "file": "C:\\\\Test\\\\event.ics",
+            "expected": "The file 'event.ics' is either empty or a folder. To upload folders zip them first."
+        },
+        {
+            "name": "",
+            "file": "C:\\\\Test\\\\event_1.ics",
+            "expected": "- Required"
+        },
+        {
+            "name": "a",
+            "file": "C:\\\\Test\\\\event_1.ics",
+            "expected": "Import or export calendars"
+        },
+        {
+            "name": "",
+            "file": "C:\\\\Test\\\\test_1.txt",
+            "expected": "The file 'test_1.txt' is either empty or a folder. To upload folders zip them first."
+        },
+        {
+            "name": "a",
+            "file": "C:\\\\Test\\\\test_1.txt",
+            "expected": "The file 'test_1.txt' is either empty or a folder. To upload folders zip them first."
+        }
+    ],
+    "authen": [
+        {
+            "username": "manager",
+            "password": "sandbox24"
+        }
+    ]
+}
