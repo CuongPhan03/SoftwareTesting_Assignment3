@@ -1,0 +1,108 @@
+{
+  "login": [
+    { "action": "set_window_size", "value": [800, 800] },
+    {
+      "action": "get_url",
+      "value": "https://sandbox.moodledemo.net/login/index.php"
+    },
+    {
+      "action": "input",
+      "element_type": "ID",
+      "element_locator": "username",
+      "value": "teacher"
+    },
+    {
+      "action": "input",
+      "element_type": "ID",
+      "element_locator": "password",
+      "value": "sandbox24"
+    },
+    {
+      "action": "click",
+      "element_type": "ID",
+      "element_locator": "loginbtn"
+    }
+  ],
+  "logout": [
+    {
+      "action": "click",
+      "element_type": "ID",
+      "element_locator": "user-menu-toggle"
+    },
+    {
+      "action": "click",
+      "element_type": "LINK_TEXT",
+      "element_locator": "Log out"
+    }
+  ],
+  "testcases": [
+    {
+      "name": "test_tC001001_create_assignment",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/assign/index.php"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "add-assignment-btn"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "assign_title",
+          "value": "New Assignment"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "assign_description",
+          "value": "This is a description for the new assignment."
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "save-btn"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//div[@class='assignment-title']",
+          "value": "New Assignment"
+        }
+      ]
+    },
+    {
+      "name": "test_tC001002_create_assignment_empty_title",
+      "tasks": [
+        {
+          "action": "get_url",
+          "value": "https://sandbox.moodledemo.net/mod/assign/index.php"
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "add-assignment-btn"
+        },
+        {
+          "action": "input",
+          "element_type": "ID",
+          "element_locator": "assign_description",
+          "value": "This assignment has no title."
+        },
+        {
+          "action": "click",
+          "element_type": "ID",
+          "element_locator": "save-btn"
+        },
+        {
+          "action": "assert_text",
+          "element_type": "XPATH",
+          "element_locator": "//div[@class='error-message']",
+          "value": "Title is required."
+        }
+      ]
+    }
+  ]
+}

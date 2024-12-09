@@ -1,0 +1,88 @@
+{
+  "test_cases": [
+    {
+      "name": "Test Case 1",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton2",
+      "expected_title": "Test_assignment"
+    },
+    {
+      "name": "Test Case 2",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_title": "Test_assignment"
+    },
+    {
+      "name": "Test Case 3",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "",
+      "submit_button_id": "id_submitbutton",
+      "expected_error": "- You must supply a value here."
+    },
+    {
+      "name": "Test Case 4",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_title": "Test_assignment"
+    },
+    {
+      "name": "Test Case 5",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_title": "Test_assignment"
+    },
+    {
+      "name": "Test Case 6",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_title": "Test_assignment"
+    },
+    {
+      "name": "Test Case 7",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "New Assignment 1",
+      "submit_button_id": "id_submitbutton",
+      "expected_error": "Due date must be after the allow submissions from date."
+    },
+    {
+      "name": "Test Case 8",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "New Assignment 1",
+      "submit_button_id": "id_submitbutton",
+      "expected_error": "Cut-off date cannot be earlier than the due date."
+    },
+    {
+      "name": "Test Case 9",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_title": "Test_assignment"
+    },
+    {
+      "name": "Test Case 10",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_title": "Test_assignment"
+    },
+    {
+      "name": "Test Case 11",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_error": "Due date must be after the allow submissions from date."
+    },
+    {
+      "name": "Test Case 12",
+      "url": "https://school.moodledemo.net/course/modedit.php?add=assign&type&course=69&section=5&return=0&beforemod=0",
+      "assignment_name": "Test_assignment",
+      "submit_button_id": "id_submitbutton",
+      "expected_error": "Cut-off date cannot be earlier than the due date."
+    }
+  ]
+}

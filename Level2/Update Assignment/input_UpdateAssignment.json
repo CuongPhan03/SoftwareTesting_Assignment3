@@ -1,0 +1,95 @@
+{
+  "login": [
+    { "action": "set_window_size", "value": [800, 800] },
+    {
+      "action": "get_url",
+      "value": "https://school.moodledemo.net/login/index.php"
+    },
+    {
+      "action": "input",
+      "element_type": "ID",
+      "element_locator": "username",
+      "value": "teacher"
+    },
+    {
+      "action": "input",
+      "element_type": "ID",
+      "element_locator": "password",
+      "value": "moodle2024"
+    },
+    {
+      "action": "click",
+      "element_type": "ID",
+      "element_locator": "loginbtn"
+    }
+  ],
+  "logout": [
+    {
+      "action": "click",
+      "element_type": "ID",
+      "element_locator": "user-menu-toggle"
+    },
+    {
+      "action": "click",
+      "element_type": "LINK_TEXT",
+      "element_locator": "Log out"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 980,
+      "name": "Test_1",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 981,
+      "name": "Test_2",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 982,
+      "name": "Test_3",
+      "expected_text": "You must supply a value here."
+    },
+    {
+      "id": 983,
+      "name": "Test_4",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 984,
+      "name": "Test_5",
+      "expected_text": "Make a submission"
+    },
+       {
+      "id": 985,
+      "name": "Test_6",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 986,
+      "name": "Test_7",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 987,
+      "name": "Test_8",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 988,
+      "name": "Test_9",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 989,
+      "name": "Test_10",
+      "expected_text": "Make a submission"
+    },
+    {
+      "id": 990,
+      "name": "Test_11",
+      "expected_text": "Make a submission"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Test_Update_1",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Assignment Test 1",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_Empty_Name",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "",
+    "submit_button": "id_submitbutton",
+    "expected_result": "error"
+  },
+  {
+    "name": "Test_Update_2",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Assignment Test 2",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_Long_Name",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "This is a very long name for an assignment test",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+   {
+    "name": "Test_Update_5",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Test_5",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_6",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Test_6",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_7",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Test_7",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_8",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Test_8",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_9",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Test_9",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_10",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Test_10",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  },
+  {
+    "name": "Test_Update_11",
+    "url": "https://school.moodledemo.net/course/modedit.php?update=980&return=1",
+    "new_name": "Test_11",
+    "submit_button": "id_submitbutton",
+    "expected_result": "success"
+  }
+  
+]
