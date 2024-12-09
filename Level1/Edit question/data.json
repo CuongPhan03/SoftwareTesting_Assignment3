@@ -1,0 +1,197 @@
+[
+    {
+        "test_case": "test_tC008001",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//div[2]/a/span/span", "type": "xpath"},
+            {"action": "clear", "locator": "id_name", "type": "id"},
+            {"action": "send_keys", "locator": "id_name", "type": "id", "value": "abc"},
+
+            {"action": "clear", "locator": "//*[@id='id_questiontext']", "type": "xpath"},
+            {"action": "send_keys", "locator": "//*[@id='id_questiontext']", "type": "xpath", "value": "abc"},
+            {"action": "switch_to_default_content"},
+            {"action": "click", "locator": "id_submitbutton", "type": "id"}
+            
+        ],
+        "assertions": [
+            {"locator": "//*[@id='mod-indent-outer-slot-741']/div[2]/a/span/span[1]", "type": "xpath", "expected": "abc"}
+        ]
+    },
+
+    {
+        "test_case": "test_tC008002",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//span[3]/span/span[1]"}
+        ],
+        "assertions": [
+            {"locator": "//span[3]/span/span[1]", "expected": "1.00"}
+        ]
+    },
+    {
+        "test_case": "test_tC008003",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//span[3]/a[2]/i", "type": "xpath"},
+            {"action": "click", "locator": ".modal-footer > .btn-primary", "type": "css"}
+        ],
+        "assertions": [
+            {
+                "locator": "//div[@class='mod_quiz-edit-top-controls']//span[1]",
+                "type": "xpath",
+                "expected": "Questions: 18"
+            }
+        ]
+    },
+    {
+        "test_case": "test_tC008004",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "clear", "locator": "inputmaxgrade", "type": "id"},
+            {
+                "action": "send_keys",
+                "locator": "inputmaxgrade",
+                "type": "id",
+                "value": "50",
+                "extra_keys": "ENTER"
+            }
+        ],
+        "assertions": [
+            {
+                "locator": "inputmaxgrade",
+                "type": "id",
+                "expected": "50.00",
+                "assertion_type": "attribute",
+                "attribute": "value"
+            }
+        ]
+    },
+    {
+        "test_case": "test_tC008005",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//li[2]/div/span/i", "type": "xpath"},
+            {"action": "click", "locator": "After Page 9", "type": "link_text"}
+        ],
+        "assertions": [
+            {"locator": "//*[@id='page-8']/h4", "type": "xpath", "assertion_type": "text", "expected": "Page 8"}
+        ]
+    },
+    {
+        "test_case": "test_tC008006",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "selectmultiplecommand", "type": "id"},
+            {"action": "click", "locator": "selectquestion-1", "type": "id"},
+            {"action": "click", "locator": "selectquestion-2", "type": "id"},
+            {"action": "click", "locator": "selectquestion-3", "type": "id"},
+            {"action": "click", "locator": "selectmultipledeletecommand", "type": "id"},
+            {"action": "click", "locator": ".modal-footer > .btn-primary", "type": "css"}
+        ],
+        "assertions": [
+            {"locator": "//div[@class='mod_quiz-edit-top-controls']//span[1]", "type": "xpath", "assertion_type": "text", "expected": "Questions: 15"}
+        ]
+    },
+    {
+        "test_case": "test_tC008007",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//span[3]/a[2]/i", "type": "xpath"},
+            {"action": "click", "locator": ".modal-footer > .btn-secondary", "type": "css"}
+        ],
+        "assertions": [
+            {"locator": "//div[@class='mod_quiz-edit-top-controls']//span[1]", "type": "xpath", "assertion_type": "text", "expected": "Questions: 15"}
+        ]
+    },
+    {
+        "test_case": "test_tC008008",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//div[2]/a/span/span", "type": "xpath"},
+            {"action": "click", "locator": "id_addanswers", "type": "id"},
+            {"action": "clear", "locator": "id_answer_1", "type": "id"},
+            {"action": "send_keys", "locator": "id_answer_1", "type": "id", "value": "abc"},
+            {"action": "click", "locator": "id_submitbutton", "type": "id"},
+            {"action": "click", "locator": "//div[2]/a/span/span", "type": "xpath"}
+        ],
+        "assertions": [
+            {"locator": "//*[@id='id_answer_1']", "type": "xpath", "assertion_type": "attribute", "attribute": "value", "expected": "abc"}
+        ]
+    },
+    {
+        "test_case": "test_tC008009",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "clear", "locator": "inputmaxgrade", "type": "id"},
+            {"action": "send_keys", "locator": "inputmaxgrade", "type": "id", "value": "-5", "extra_keys": "Keys.ENTER"}
+        ],
+        "assertions": [
+            {"locator": "//*[@id='inputmaxgrade']", "type": "xpath", "assertion_type": "attribute", "attribute": "value", "expected": "50.00"}
+        ]
+    },
+    {
+        "test_case": "test_tC008010",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "clear", "locator": "inputmaxgrade", "type": "id"},
+            {"action": "send_keys", "locator": "inputmaxgrade", "type": "id", "value": "90910", "extra_keys": "Keys.ENTER"}
+        ],
+        "assertions": [
+            {"locator": "//p[@class='errormessage']", "type": "xpath", "assertion_type": "text", "expected": "Error writing to database"}
+        ]
+    },
+    {
+        "test_case": "test_tC008011",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//div[2]/a/span/span", "type": "xpath"},
+            {"action": "clear", "locator": "id_name", "type": "id"},
+            {"action": "switch_to", "target": "default_content"},
+            {"action": "click", "locator": "id_submitbutton", "type": "id"}
+        ],
+        "assertions": [
+            {"locator": "//*[@id='id_error_name']", "type": "xpath", "assertion_type": "text", "expected": "- You must supply a value here."}
+        ]
+    },
+    {
+        "test_case": "test_tC008012",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//div[2]/a/span/span", "type": "xpath"},
+            {"action": "clear", "locator": "//*[@id='id_questiontext']", "type": "xpath"},
+            {"action": "switch_to", "target": "default_content"},
+            {"action": "click", "locator": "id_submitbutton", "type": "id"}
+        ],
+        "assertions": [
+            {"locator": "//*[@id='id_error_questiontext']", "type": "xpath", "assertion_type": "text", "expected": "- You must supply a value here."}
+        ]
+    },
+    {
+        "test_case": "test_tC008013",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/mod/quiz/edit.php?cmid=672"},
+            {"action": "click", "locator": "//div[2]/a/span/span", "type": "xpath"},
+            {"action": "clear", "locator": "id_answer_0", "type": "id"},
+            {
+                "action": "select_dropdown",
+                "locator": "//select[@id='id_fraction_0']",
+                "type": "xpath",
+                "value": "None"
+            },
+            {"action": "switch_to", "target": "default_content"},
+            {"action": "click", "locator": "id_submitbutton", "type": "id"}
+        ],
+        "assertions": [
+            {
+                "locator": "//*[@id='fgroup_id_error_answeroptions_0']",
+                "type": "xpath",
+                "assertion_type": "text",
+                "expected": "One of the answers should have a score of 100% so it is possible to get full marks for this question."
+            }
+        ]
+    }
+    
+    
+    
+    
+]
