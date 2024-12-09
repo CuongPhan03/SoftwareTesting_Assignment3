@@ -1,0 +1,85 @@
+[
+    {
+        "test_case": "test_tC009001",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"},
+            {"action": "click", "locator": "//section/div/div/button", "type": "xpath"},
+            {"action": "send_keys", "locator": "//form/div[2]/div[2]/input", "type": "xpath", "value": "abc"},
+            {"action": "select", "locator": "//form/div[3]/div[2]/select", "type": "xpath", "value": "Notes"},
+            {"action": "click", "locator": "//div[3]/button[2]", "type": "xpath"}
+        ],
+        "assertions": [
+            {"locator": "//*[@id='region-main']/div/nav/div/h1", "type": "xpath", "expected": "abc"}
+        ]
+    },
+    {
+        "test_case": "test_tC009002",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"},
+            {"action": "click", "locator": "//section/div/div/button", "type": "xpath"},
+            {"action": "select", "locator": "//form/div[3]/div[2]/select", "type": "xpath", "value": "Notes"},
+            {"action": "click", "locator": "//div[3]/button[2]", "type": "xpath"}
+        ],
+        "assertions": [
+            {"locator": "//div[@data-region='body']/form/div[2]/div[2]/div", "type": "xpath", "expected": "- You must supply a value here."}
+        ]
+    },
+    {
+        "test_case": "test_tC009003",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"},
+            {"action": "click", "locator": "//section/div/div/button", "type": "xpath"},
+            {"action": "send_keys", "locator": "//form/div[2]/div[2]/input", "type": "xpath", "value": "abc"},
+            {"action": "click", "locator": "//div[3]/button[2]", "type": "xpath"}
+        ],
+        "assertions": [
+            {"locator": "//div[@data-region='body']/form/div[3]/div[2]/div", "type": "xpath", "expected": "- You must supply a value here."}
+        ]
+    },
+    {
+        "test_case": "test_tC009004",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"},
+            {"action": "click", "locator": "//section/div/div/button", "type": "xpath"},
+            {"action": "click", "locator": "//div[3]/button[2]", "type": "xpath"}
+        ],
+        "assertions": [
+            {"locator": "//div[@data-region='body']/form/div[3]/div[2]/div", "type": "xpath", "expected": "- You must supply a value here."}
+        ]
+    },
+    {
+        "test_case": "test_tC009005",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"},
+            {"action": "click", "locator": "//section/div/div/button", "type": "xpath"},
+            {"action": "click", "locator": "//button[@data-action='cancel']", "type": "xpath"}
+        ]
+    },
+    {
+        "test_case": "test_tC009006",
+        "actions": [
+            {"action": "logout"},
+            {"action": "login", "value": "student"},
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"}            
+        ],
+
+        "assertions": [
+            {"locator": "//div[@data-region='core_table/dynamic']/div[1]", "type": "xpath", "expected": "Nothing to display"}
+        ]
+    },
+    {
+        "test_case": "test_tC009007",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"},
+            {"action": "click", "locator": "//section/div/div/button", "type": "xpath"},
+            {"action": "send_keys", "locator": "//form/div[2]/div[2]/input", "type": "xpath", "value": "abc"}
+        ]
+    },
+    {
+        "test_case": "test_tC009008",
+        "actions": [
+            {"action": "navigate", "value": "https://school.moodledemo.net/reportbuilder/index.php"},
+            {"action": "click", "locator": "//section/div/div/button", "type": "xpath"}
+        ]
+    }
+]
